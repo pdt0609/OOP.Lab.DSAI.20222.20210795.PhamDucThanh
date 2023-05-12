@@ -1,4 +1,4 @@
-package Lab01;
+package hust.soict.dsai.lab01;
 import javax.swing.JOptionPane;
 public class prob2_2_5 {
 public static void main(String [] args) {

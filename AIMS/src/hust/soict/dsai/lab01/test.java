@@ -1,11 +1,10 @@
-package Lab01;
+package hust.soict.dsai.lab01;
 
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
+public class test {
 
-public class prob6_4 {
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("enter year:");

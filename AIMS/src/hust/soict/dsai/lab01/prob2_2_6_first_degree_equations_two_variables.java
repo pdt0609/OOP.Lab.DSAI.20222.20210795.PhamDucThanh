@@ -1,4 +1,4 @@
-package Lab01;
+package hust.soict.dsai.lab01;
 	import javax.swing.JOptionPane;
 public class prob2_2_6_first_degree_equations_two_variables {
 	public static void main(String [] args) {
