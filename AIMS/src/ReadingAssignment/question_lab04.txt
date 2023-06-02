@@ -1,0 +1,22 @@
+For example, in the Media class, you must cast the Object obj to a Media, and then check the equality of the two objects’ attributes as the 
+above requirements (i.e. title for Media; title and length for Track). If the passing object is 
+not an instance of Media, what happens?
++,System error
+
+
+Which classes are aggregates of other classes? Checking all constructors of whole classes if they 
+initialize for their parts?
++, Class CompactDisc is the aggregation of the Track class
+
+
+- What class should implement the Comparable interface?
++, class MediaComparatorByCostTitle  and class MediaComparatorByTitleCost
+
+- In those classes, how should you implement the compareTo()method be to reflect the ordering that we 
+want?
++,just compare cost or title.
+
+- Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this 
+Comparable interface approach
++,Yes, we can
+
