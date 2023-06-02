@@ -1,6 +1,9 @@
 package hust.soict.dsai.test.cart;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import java.util.ArrayList;
+
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
 
 public class Cart {
 	public static final int MAX_LIMITED_ORDERED=5;
