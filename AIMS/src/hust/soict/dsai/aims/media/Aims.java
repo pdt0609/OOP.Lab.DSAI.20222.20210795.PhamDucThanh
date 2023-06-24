@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Iterator;
 
 public class Aims {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LimitExceededException {
         Store store = new Store();
         Cart cart = new Cart();
         Scanner userInput = new Scanner(System.in);
@@ -202,10 +202,10 @@ public class Aims {
                     for (Media media : store.dvdList()) {
                         if (media.isMatch(title)) {
                             count++;
-                            cart.addMedia(media);
+                
                             System.out.println("------------------------------------");
                              if (media.getCategory()=="DVD") {
-                            	 cart.getNoDVD();
+
                             	 }
                         }
                     }
