@@ -43,4 +43,9 @@ public class Store {
         }
         System.out.println("******************************************");
     }
+
+	public ArrayList<Media> getItemsInStore() {
+		// TODO Auto-generated method stub
+		return this.itemsInStore;
+	}
 }

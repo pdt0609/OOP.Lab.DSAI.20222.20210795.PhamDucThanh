@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import javax.naming.LimitExceededException;
 
+import hust.soict.dsai.aims.exception.PlayerException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Iterator;
 
 public class Aims {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws LimitExceededException, PlayerException {
         Store store = new Store();
         Cart cart = new Cart();
         Scanner userInput = new Scanner(System.in);
@@ -31,7 +32,7 @@ public class Aims {
         boolean status = true;
         ArrayList<String> list = new ArrayList<>();
         DigitalVideoDisc newDVD = new DigitalVideoDisc("", "", "", 0, 0);
-        Book newBook = new Book("", "",list, 0,0);
+        Book newBook = new Book("", "",list, 0);
         ArrayList<Track> tracks = new ArrayList<Track>();
         CompactDisc newCD = new CompactDisc("", "", "", "", tracks, 0);
         Media median;
@@ -202,10 +203,10 @@ public class Aims {
                     for (Media media : store.dvdList()) {
                         if (media.isMatch(title)) {
                             count++;
-                            cart.addMedia(media);
+                
                             System.out.println("------------------------------------");
                              if (media.getCategory()=="DVD") {
-                            	 cart.getNoDVD();
+
                             	 }
                         }
                     }
