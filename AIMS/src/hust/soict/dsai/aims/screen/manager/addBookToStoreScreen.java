@@ -3,8 +3,8 @@ package hust.soict.dsai.aims.screen.manager;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import AimsProject.src.hust.soict.dsai.aims.store.Store;
-import AimsProject.src.hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.Book;
+import hust.soict.dsai.aims.media.Store;
 
 import javax.swing.JLabel;
 import javax.swing.JButton;

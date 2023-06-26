@@ -8,10 +8,11 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import AimsProject.src.hust.soict.dsai.aims.exception.PlayerException;
-import AimsProject.src.hust.soict.dsai.aims.store.Store;
-import AimsProject.src.hust.soict.dsai.aims.media.Media;
-import AimsProject.src.hust.soict.dsai.aims.media.Playable;
+import hust.soict.dsai.aims.exception.PlayerException;
+
+import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.media.Playable;
+import hust.soict.dsai.aims.media.Store;
 
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -199,3 +200,4 @@ public class StoreManagerScreen extends JFrame {
             dialog.setVisible(true);
         }
     }
+}

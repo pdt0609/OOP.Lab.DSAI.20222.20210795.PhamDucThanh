@@ -1,5 +1,4 @@
-package hust.soict.dsai.aims.screen;
-
+package hust.soict.dsai.aims.screen.customer.controller;
 
 import java.io.IOException;
 
@@ -7,13 +6,16 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import hust.soict.dsai.aims.exception.PlayerException;
 import hust.soict.dsai.aims.media.Cart;
 import hust.soict.dsai.aims.media.Media;
 import hust.soict.dsai.aims.media.Store;
 import hust.soict.dsai.aims.media.Playable;
+
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.FlowLayout;
+
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -35,12 +37,12 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 
-public class CartScreenController {
+public class CartController {
     private Cart cart;
     private Store store;
 
-    public CartScreenController(Store store, Cart cart) {
-        this.cart = cart;
+    public CartController(Store store,Cart cart2) {
+        this.cart = cart2;
         this.store = store;
     }
 
@@ -112,7 +114,7 @@ public class CartScreenController {
     @FXML
     void btnViewStorePressed(ActionEvent event) {
         try {
-            final String STORE_FXML_FILE_PATH = "/AimsProject/src/hust/soict/dsai/aims/screen/customer/view/Store.fxml";
+            final String STORE_FXML_FILE_PATH = "/hust/soict/dsai/aims/screen/customer/view/Store.fxml";
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(STORE_FXML_FILE_PATH));
             fxmlLoader.setController(new ViewStoreController(store, cart));
             Parent root = fxmlLoader.load();
